@@ -236,7 +236,7 @@ fetchVideoPosts()
           </div>
           <div id="position">
             <p className="picture-item-decription">{item.description}</p>
-            <p className="picture-item-pric">Price:</p>
+            <p className="picture-item-price">Price:</p>
             <p className="picture-item-price">{item.price}</p>
           </div>
 
