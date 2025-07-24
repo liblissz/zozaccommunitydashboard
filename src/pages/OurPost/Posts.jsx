@@ -277,11 +277,7 @@ fetchVideoPosts()
             <p className="picture-item-price">{item.price}</p>
           </div>
 
-          <div className="botto">
-          <Heart className='love' />
-         
-            <Send  className='send'/>
-          </div>
+          
         </div>
       </div>
     </div>
