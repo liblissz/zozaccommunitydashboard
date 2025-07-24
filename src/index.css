@@ -1,0 +1,53 @@
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root{
+    ---gold: #ad8a39;
+    --darkgreen:#2d5b1a;
+    --lightgreen: #c1d38c;
+    --white: #ffffff;
+    ---black: #000000;
+    --background: #121026;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+:root {
+  --poppins: "Poppins", sans-serif;
+  --lato: "Lato", sans-serif;
+  --light: #f9f9f9;
+  --blue: #2d5b1a;
+  --light-blue: #cfe8ff;
+  --grey: #eee;
+  --dark-grey: #c1d38c;
+  --dark: #342e37;
+  --red: #ad8a39;
+  --yellow: #ffce26;
+  --light-yellow: #fff2c6;
+  --orange: #fd7238;
+  --light-orange: #ffe0d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body.dark {
+  --light: #0c0c1e;
+  --grey: #060714;
+  --dark: #fbfbfb;
+}
+body {
+  background: var(--grey);
+  overflow-x: hidden;
+} SIDEBAR */
+
+/* i want to split it into different component the Header,Main and Sidebar i need you to help me split it with the css */

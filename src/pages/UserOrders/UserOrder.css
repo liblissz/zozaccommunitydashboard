@@ -1,0 +1,228 @@
+.elephant {
+  display: flex;
+margin: 50px;
+flex-wrap: wrap;
+  justify-content: space-between;
+  width:80%;
+gap: 20px;
+  flex-wrap: wrap;
+  color: var(--dark) !important;
+}
+
+.lion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 45%;
+  align-items: baseline;
+  height: 500px;
+  border-radius: 20px;
+}
+@media (max-width: 500px) {
+    .lion{
+        width: 100% !important;
+    }
+}
+
+.tiger {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 10px 0px;
+  border-radius: 0px 50px 50px 0px;
+  font-family: 'Jost', sans-serif;
+  color: var(--dark);
+  text-shadow: 0px 3px 5px black;
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+}
+
+.wolf {
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 12px;
+  font-weight: 400;
+}
+
+.fox {
+  font-family: 'Jost', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  padding: 12px;
+}
+
+.tiger:before {
+  content: '';
+  width: 34px;
+  height: 90px;
+  position: absolute;
+  left: -33px;
+  top: 0px;
+  border-radius: 50px 0px 0px 50px;
+  z-index: -1;
+  /* background: #95B7A2; */
+  /* background: -webkit-linear-gradient(bottom, #95B7A2, #AED2BC); */
+  background: var(--dark);
+  /* background: linear-gradient(to top, #95B7A2, #AED2BC); */ ;
+}
+
+.tiger:after {
+  content: '';
+  width: 25px;
+  height: 40px;
+  position: absolute;
+  left: -25px;
+  bottom: -40px;
+  border-radius: 50px 0px 0px 50px;
+  z-index: -1;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.bearImg {
+  width: 100px;
+  display: none !important;
+}
+
+/* GREEN CARD */
+
+.lionGreen {
+  background: var(--light);
+  box-shadow: 4px 4px 4px #AED2BC;
+}
+
+.tigerGreen {
+  background: var(--light);
+  background: var(--light);
+  background: var(--light);
+  background: var(--light);
+  box-shadow: 0px 2px 2px var(--light);
+}
+
+.tigerGreen:before {
+  background: var(--light);
+}
+
+.tigerGreen:after {
+  background: var(--light);
+}
+
+/* BLUE CARD */
+
+.lionBlue {
+  background: var(--light);
+  box-shadow: 4px 8px 1px var(--light);
+}
+
+.tigerBlue {
+  background: #FDFFFE;
+  background: -webkit-linear-gradient(right, #FDFFFE, #92E8EB);
+  background: -moz-linear-gradient(right, #FDFFFE, #92E8EB);
+  background: linear-gradient(to left, #FDFFFE, #92E8EB);
+  box-shadow: 0px 2px 2px #92E8EB;
+}
+
+.tigerBlue:before {
+  background: #92E8EB;
+}
+
+.tigerBlue:after {
+  background: #71bdbf;
+}
+
+/* ORANGE CARD */
+
+.lionOrange {
+  background: #fdf8f3;
+  box-shadow: 4px -2px 1px #F68404;
+}
+
+.tigerOrange {
+  background: #FDFFFE;
+  background: -webkit-linear-gradient(right, #FDFFFE, #F68404);
+  background: -moz-linear-gradient(right, #FDFFFE, #F68404);
+  background: linear-gradient(to left, #FDFFFE, #F68404);
+  box-shadow: 0px 2px 2px #F68404;
+}
+
+.tigerOrange:before {
+  background: #F68404;
+}
+
+.tigerOrange:after {
+  background: #d06f02;
+}
+
+/* PINK CARD */
+
+.lionPink {
+  background: #fffafd;
+  position: relative;
+  box-shadow: 2px 2px 1px #F34EAE;
+  border-radius: 20px 20px 0px 20px;
+}
+
+.lionPink:before {
+  content: '';
+  width: 0px;
+  height: 50px;
+  /* background: red; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 100px solid transparent;
+  border-bottom: 90px solid #F34EAE;
+}
+
+.tigerPink {
+  background: #FDFFFE;
+  background: -webkit-linear-gradient(right, #FDFFFE, #F34EAE);
+  background: -moz-linear-gradient(right, #FDFFFE, #F34EAE);
+  background: linear-gradient(to left, #FDFFFE, #F34EAE);
+  box-shadow: 0px 2px 2px #F34EAE;
+}
+
+.tigerPink:before {
+  background: #F34EAE;
+}
+
+.tigerPink:after {
+  background: #d24095;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 800px) {
+  .lion {
+    width: 35%;
+    margin-top: 20px;
+  }
+
+  .bearImg {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .lion {
+    width: 70%;
+  }
+}
+
+.owl {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 50px;
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+}

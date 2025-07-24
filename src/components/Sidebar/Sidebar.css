@@ -1,0 +1,10 @@
+.big{
+    font-size: 18px;
+    width: 100%;
+}
+#po{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 7px;
+}

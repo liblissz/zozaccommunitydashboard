@@ -1,0 +1,269 @@
+
+
+button,
+input {
+font: inherit;
+border: none;
+}
+
+/* Variables */
+
+:root {
+--primary-color: #2d8f02;
+--text-color: #ffffff;
+--secondary-color: #262626;
+--background-body: linear-gradient(to top, #0d0d0d, rgb(20, 20, 20, 0.9));
+--form-background: #1D1D1D;
+}
+
+/* App Css */
+a:hover,
+button:hover {
+opacity: 0.8;
+}
+
+.body{
+font-family: "Poppins";
+
+    display: flex;
+align-items: center;
+justify-content: center; 
+width: 100%;
+}
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(rgba(32, 248, 97, 0.3), rgba(25, 98, 255, 0));
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: top 0.02s, left 0.02s;
+}
+
+
+.form__section {
+position: relative;
+margin: 5px;
+}
+.form__section::before, .form__section::after {
+content: "";
+width: 108px;
+height: 108px;
+background: radial-gradient(#007419, #033924);
+border-radius: 100%;
+position: absolute;
+z-index: -1;
+}
+  
+.form__section::before {
+box-shadow: 0 0 130PX 50px #016412, -13px -13px 11px 0 #002616 inset;
+top: 70px;
+right: -70px;
+}
+  
+.form__section::after {
+box-shadow: 0 0 130PX 50px #018232, 13px -13px 11px 0 #017207 inset;
+bottom: 70px;
+left: -70px;
+}
+
+.forms {
+width: 500px;
+/* max-width: 375px; */
+background: var(--form-background);
+border-radius: 10px;
+margin: 100px;
+padding: 75px 28px 50px;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.2) 0px 0.125em 0.5em, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px inset;
+
+}
+@media (max-width: 500px) {
+   .forms{
+    margin: 0px;
+    width: 100%;
+   } 
+}
+.form__title {
+color: #fff;
+font-size: 36px;
+font-weight: 900;
+margin-bottom: 15px;
+}
+
+.form__sub-title {
+color: #fff;
+padding-bottom: 40px;
+}
+
+.form__input-wrapper {
+height: 65px;
+margin-top: 30px;
+position: relative;
+margin: 12px;
+}
+
+.form__input {
+height: 65px;
+width: 100%;
+background: var(--secondary-color);
+border-radius: 10px;
+padding: 0 45px;
+
+color: var(--text-color);
+outline: none;
+}
+.form__input:focus {
+  border-bottom:1px solid var(--primary-color)
+}
+.form__input::placeholder {
+color: var(--text-color);
+}
+
+.form__input-icon {
+position: absolute;
+top: 0;
+bottom: 0;
+margin: auto 0;
+width: 35px;
+height: 35px;
+color: #626262;
+left: 10px;
+}
+
+.form__input-icon svg {
+width: 44px;
+height: 44px ;
+color: white;
+}
+
+.form__input:focus + .form__input-icon svg {
+color: var(--primary-color);
+}
+
+.form__pass-toggle {
+color: #626262;
+position: absolute;
+width: 24px;
+height: 24px;
+top: 0;
+bottom: 0;
+margin: auto 0;
+right: 10px;
+transition: all 100ms linear;
+}
+
+.form__pass-toggle--active {
+transform: rotate(90deg);
+color: var(--primary-color);
+}
+
+.form__pass-toggle svg {
+width: 24px;
+height: 24px;
+}
+
+.form__forget {
+display: block;
+margin-top: 20px;
+color: var(--primary-color);
+text-align: right;
+font-size: 14px;
+}
+
+.form__submit-btn {
+cursor:pointer;
+background: var(--primary-color);
+height: 40px;
+width: 100%;
+margin-top: 50px;
+border-radius: 10px;
+box-shadow: 0 3px 26px 0px #005a1398;
+color: #e1e1e1e1;
+font-weight: 600;
+}
+.form__submit-btn:active {
+  background:none
+}
+.sign-in-with {
+margin-top: 50px;
+}
+
+.sign-in-with__title {
+text-align: center;
+font-size: 14px;
+color: var(--text-color);
+}
+
+.sign-in-with__options {
+margin-top: 10px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.sign-in-with__option {
+width: 48px;
+height: 48px;
+border-radius: 50px;
+background-color: #262626;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.form__sign-up {
+text-align: center;
+margin-top: 40px;
+color: var(--text-color);
+font-size: 14px;
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.form__sign-up a {
+color: var(--primary-color);
+font-weight: 600;
+font-size: inherit;
+}
+
+.form__bottom-link {
+display: block;
+margin-top: 35px;
+color: var(--text-color);
+font-size: 14px;
+text-align: center;
+}
+
+@media screen and (max-width:650px) {
+.form__section::before, .form__section::after {
+display: none;
+}
+}
+
+
+.user-icon {
+  width: 24px !important;
+  height: 24px !important;
+  
+  float: left;
+}
+
+
+
+
+
+.down{
+    margin-top: 100px !important;
+}
+
+
+.addproduct-thumbnail-image{
+    cursor:  pointer !important;
+}
+
+.none{display: none;}
