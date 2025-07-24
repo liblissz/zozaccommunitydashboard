@@ -117,7 +117,7 @@ fetchadmins()
         <div className="form-input">
           <input type="search" placeholder="Search..." autoComplete='disabled'  value={search} onChange={(e)=> setsearch(e.target.value)}/>
           <button type="submit" className="search-btn">
-            <Search />
+{/*             <Search /> */}
           </button>
         </div>
         <div className={search.length=== 0 ? "nonedisplay" :'search-content'}>
