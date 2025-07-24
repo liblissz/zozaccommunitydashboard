@@ -134,6 +134,9 @@ width: 200px;
     font-size: 0.6rem;
  
   }
+    .picture-item-decription{
+        font-size:11px !important;
+    }
 
   .picture-item-image {
     transition: transform 0.2s ease;
