@@ -176,8 +176,8 @@ fetchVideoPosts()
               onChange={(e)=> setcontent(e.target.value)} />
             </div>
              <div>
-              <label htmlFor="price" className="label">Price:</label>
-              <input type="text" name="price" className='inputs' placeholder="Price*"  
+              <label htmlFor="price" className="label">ACTIVITY LINK:</label>
+              <input type="text" name="price" className='inputs' placeholder="LINK*"  
               value={price}
               onChange={(e)=> setprice(e.target.value)}/>
             </div>
